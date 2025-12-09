@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub — Learning Resources</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="sm:p-3 min-h-screen bg-slate-50 text-slate-900 p-6 flex justify-center items-start font-sans">
+    <div class="w-full max-w-[1100px]" role="main">
+        <!-- header -->
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 ">
+            <div class="flex items-center gap-3">
+                <div
+                    class="flex w-12 h-12 items-center justify-center text-white bg-blue-600 shadow-lg shadow-slate-900/8 font-bold rounded-lg">
+                    SH
+                </div>
+                <div class="font-extrabold">StudyHub</div>
+                <div class="text-xs text-slate-500">Learn together • Build faster</div>
+            </div>
+
+            <nav class="flex g-4 item-center sm:order-2 ">
+                <a href="#courses" class="text-slate-500 font-semibold px-3 py-2 rounded-lg">Courses</a>
+                <a href="#resources" class="text-slate-500 font-semibold px-3 py-2 rounded-lg">Resources</a>
+                <a href="#community" class="text-slate-500 font-semibold px-3 py-2 rounded-lg">Community</a>
+                <a href="#signup" class="bg-blue-600 text-white text-slate-900 font-semibold p-3 p-2 rounded-lg">Get
+                    Started</a>
+            </nav>
+        </header>
+        <!-- Hero -->
+        <section class="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-6 items-center mb-7"
+            aria-labelledby="hero-heading">
+            <div
+                class="bg-gradient-to-b from-white/60 to-white/90 p-7 rounded-xl shadow-xl shadow-slate-900/6 backdrop-blur-sm">
+                <h1 id="hero-heading" class="sm:text-xl text-3xl font-bold mb-3">Your weekly learning playground</h1>
+                <p class="text-slate-500 mb-4">Curated bite-sized courses, hands-on projects, and community challenges
+                    to keep you learning consistently.</p>
+                <div class="flex gap-3 mb-4">
+                    <button
+                        class="bg-blue-600 text-white font-bold px-4 py-3 rounded-xl hover:bg-blue-700 transition">Explore
+                        Courses</button>
+                    <button
+                        class="bg-transparent border-2 border-slate-200 text-blue-600 font-bold px-4 py-3 rounded-xl hover:bg-slate-50 transition">Join
+                        Community</button>
+                </div>
+
+                <hr class="my-4 border-indigo-100">
+
+                <div class="flex gap-3 flex-wrap">
+                    <div class="min-w-[160px]">
+                        <div class="text-xs text-slate-500">Next live workshop</div>
+                        <div class="font-bold">Stateful APIs • Dec 15</div>
+                    </div>
+                    <div class="min-w-[160px]">
+                        <div class="text-xs text-slate-500">Active learners</div>
+                        <div class="font-bold">3,412</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup card -->
+            <aside
+                class="bg-gradient-to-b from-white/60 to-white/90 p-7 rounded-xl shadow-xl shadow-slate-900/6 backdrop-blur-sm"
+                aria-labelledby="signup-title">
+                <h2 id="signup-title" class="text-lg font-bold mb-2">Start your free plan</h2>
+                <p class="text-slate-500 mb-3">No credit card — upgrade anytime.</p>
+                <form id="signup" class="flex flex-col gap-2">
+                    <input type="text" placeholder="Full name"
+                        class="px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="email" placeholder="Email address"
+                        class="px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button type="submit"
+                        class="bg-blue-600 text-white font-bold px-4 py-3 rounded-xl hover:bg-blue-700 transition">Create
+                        account</button>
+                </form>
+            </aside>
+        </section>
+        <!-- features -->
+        <section class="md:grid-cols-2 sm:grid-cols-1 grid-cols-4  g-4 mb-7" aria-label="features">
+            <div class="bg-white p-6 rounded-xl shadow-blue/40">
+                <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center font-bold">
+                    PG</div>
+                <div>
+                    <h3 class="mb-2 text-base font-bold">Project Guided</h3>
+                    <p class="text-slate-500 text-sm">Short projects with guided steps and solution walkthroughs.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-blue/40">
+                <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center font-bold">
+                    LR</div>
+                <div>
+                    <h3 class="mb-2 text-base font-bold">Learning Roadmaps</h3>
+                    <p class="text-slate-500 text-sm">Structured paths from beginner to job-ready levels.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-blue/40">
+                <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center font-bold">
+                    CM</div>
+                <div>
+                    <h3 class="mb-2 font-bold text-base">Community Mentors</h3>
+                    <p class="text-slate-500 text-sm">Mentor hours and peer feedback to accelerate growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources grid -->
+        <section id="resources" class="sm:grid-cols-2 md:grid-cols-3 grid-cols-4 g-3 mb-7" aria-label="resources">
+            <article class="bg-white p-3 rounded-lg flex flex-col">
+                <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd"
+                    alt="notebook and coffee" class="sm:h-22 w-full h-27 object-cover rounded-lg">
+                <h4 class="text-sm font-bold">How to build a daily coding habit</h4>
+                <p class="text-slate-500 text-xs">10 min read • Beginner</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh"
+                    alt="laptop" class="sm:h-22 w-full h-27 object-cover rounded-lg">
+                <h4 class="text-sm font-bold">Deploy your first Node.js app</h4>
+                <p class="text-slate-500 text-xs">30 min guide • Intermediate</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col">
+                <img src="https://images.unsplash.com/photo-1515165562835-c6c8f2d0d6f9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ijkl"
+                    alt="whiteboard diagram" class="sm:h-22 w-full h-27 object-cover rounded-lg">
+                <h4 class="text-sm font-bold">System design crash course</h4>
+                <p class="text-slate-500 text-xs">45 min • Intermediate</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=mnop"
+                    alt="team" class="sm:h-22 w-full h-27 object-cover rounded-lg">
+                <h4 class="text-sm font-bold">How to work in open source</h4>
+                <p class="text-slate-500 text-xs">25 min • All levels</p>
+            </article>
+        </section>
+
+        <!-- Two-column layout with sidebar -->
+        <section class="lg:grid-cols-[1fr] grid-cols-[2fr_1fr] g-5 mb-7" aria-label="dashboard">
+            <div>
+                <div class=" p-7 rounded-xl shadow-lg shadow-slate-300/60" class="mb-3">
+                    <h3 class="mb-2 font-bold ">Your active courses</h3>
+                    <div class="flex flex-column gap-3">
+                        <div class="flex justify-between items-center gap-3">
+                            <div>
+                                <div class="font-bold">Fullstack Basics</div>
+                                <div class="text-sm text-slate-500">Module 3 of 8</div>
+                            </div>
+                            <div class="mw-30">
+                                <div class="text-sm text-slate-500">Progress</div>
+                                <div class="h-2 bg-blue-100 rounded-lg mt-1 overflow-hidden">
+                                    <div class="w-[78%] h-full bg-blue-600">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-space-between items-center g-3">
+                            <div>
+                                <div class="font-bold">Intro to Databases</div>
+                                <div class="text-sm text-slate-500">Module 1 of 5</div>
+                            </div>
+                            <div class="mw-30">
+                                <div class="text-sm text-slate-500">Progress</div>
+                                <div class="h-2 bg-white/900 rounded-lg mt-1 overflow-hidden">
+                                    <div class="w-[36%] h-full bg-blue-600">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-blue-600 p-7 rounded-xl shadow-lg shadow-slate-300/60">
+                    <h3 class="margin-bottom:10px">Community Challenges</h3>
+                    <ul class="list-none grid g-2">
+                        <li class="bg-white p-2 rounded-lg flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">30-day JS challenge</div>
+                                <div class="text-sm text-slate-500">Day 12 • 120 people active</div>
+                            </div>
+                            <button
+                                class="border-0 px-4 py-3 rounded-xl cursor-pointer font-bold bg-transparent text-blue-600 border-1 border-slate-200">Join</button>
+                        </li>
+                        <li class="bg-white p-2 rounded-lg flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">Weekly Algo Sprint</div>
+                                <div class="text-sm text-slate-500">Sat • 10:00 AM</div>
+                            </div>
+                            <button
+                                class="border-0 px-4 py-3 rounded-xl cursor-pointer font-bold bg-transparent text-blue-600 border-1 border-slate-200">RSVP</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="bg-white p-6 rounded-xl h-full flex flex-col g-3" aria-labelledby="progress-title">
+                <h4 id="progress-title" class="mb-1">Learning streak</h4>
+                <div class="flex justify-between items-center g-3">
+                    <div>
+                        <div class="text-sm text-slate-500">This week</div>
+                        <div style="font-weight:700">4 days</div>
+                    </div>
+                    <div class="flex-1 h-[10%] bg-slate-100 rounded-lg overflow-hidden" aria-hidden="true"><span
+                            class="w-[64%] block h-full w-[56%] bg-blue-400"></span></div>
+                </div>
+
+                <div>
+                    <h4 class="mb-1">Recommended topic</h4>
+                    <div class="font-bold">APIs with Express</div>
+                    <p class="text-sm text-slate-500" class="mt-2">A short path to build and deploy a REST API in under
+                        an
+                        hour.</p>
+                </div>
+
+                <div class="mt-auto">
+                    <h4 class="mb-2">Account</h4>
+                    <div class="text-sm text-slate-500">Email: student@example.com</div>
+                    <button
+                        class="m-2 border-0 px-4 py-3 rounded-xl cursor-pointer font-bold bg-transparent text-blue-600 border-1 border-white/900">Manage
+                        plan</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Footer -->
+        <footer class="md:grid-cols-1 grid-cols-[1fr_1fr] g-4 items-start" >
+            <div>
+                <div style="font-weight:800">StudyHub</div>
+                <div class="text-sm text-slate-500">Learn together • Build faster</div>
+            </div>
+            <div classs=" flex g-3 flex-wrap justify-end">
+                <a class="text-sm text-slate-500" href="#">Terms</a>
+                <a class="text-sm text-slate-500" href="#">Privacy</a>
+                <a class="text-sm text-slate-500" href="#">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
